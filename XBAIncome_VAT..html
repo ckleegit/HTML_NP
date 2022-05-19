@@ -1,0 +1,135 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>수입결의서_부가세</title>
+</head>
+<body>
+<style>   
+        h1.ylwTxtTitle {font-weight: bold; font-size: 30px; font-family: ''' + 'Malgun Gothic' + '''; letter-spacing: 12px; text-align: center; text-decoration: underline; margin: 50px 0 30px 0;}   
+        .ylwWrap {width: 980px; font-family: ''' + 'Malgun Gothic' + '''; font-size: 0.83rem; color: #313131;}   
+        .ylwWrap > div > table {width: 100%; border-collapse: collapse; border-top: 1px solid #333; border-left: 1px solid #333; border-spacing: 0px;}   
+        .ylwWrap > div > table tr th, .ylwWrap > div > table tr td {padding: 4px 5px; min-height: 26px; height:26px; box-sizing: border-box; text-align: left; font-size: 0.832rem; word-break: break-all; letter-spacing: -.8px; border-top: 0px; border-left: 0px; border-right: 1px solid #333; border-bottom: 1px solid #333;}   
+        .ylwWrap > div > table tr th.ylwDashline, .ylwWrap > div > table tr td.ylwDashline {border-bottom: 1px dashed #333;}   
+        .ylwWrap > div > table tr th.ylwNoline, .ylwWrap > div > table tr td.ylwNoline {border-bottom: 0px solid #fff;}   
+        .ylwWrap > div > table tr th {font-weight: bold;background-color: #e6e8eb;}   
+        .ylwWrap > div > table tr td.ylwSummary {background-color: #e6e8eb;}   
+        .ylwWrap > div > table tr td.ylwFontsizesmall {font-size: 0.7rem;}   
+        .ylwWrap > div > table tr td.ylwCenter {text-align: center;}   
+        .ylwWrap > div > table tr td.ylwRight {text-align: right;}   
+        .ylwWrap > div > table tr td.ylwUnit {text-align: center;}   
+        .ylwWrap > div > table tr td.ylwDate {text-align: center;}   
+        .ylwWrap > div > table tr td.ylwNumber {text-align: right;}   
+        /*마스터 테이블*/   
+        .ylwWrap > .ylwTable-info {margin-bottom: 0px;}   
+        .ylwWrap > .ylwTable-info > table tr th {text-align: center;}   
+        .ylwWrap > .ylwTable-info > table tr th {background: rgb(221, 221, 221); font-size: 12px; font-family: ''' + 'Malgun Gothic' + ''';}	   
+		.ylwWrap > .ylwTable-info > table th {width: 10%;}   
+        .ylwWrap > .ylwTable-info > table td {width: 20%;}   
+        .ylwWrap > .ylwTable-info > table td {font-size: 12px; font-family: ''' + 'Malgun Gothic' + ''';}		   
+        /*데이터 테이블*/   
+        .ylwWrap > .ylwTable-detail > table tr th {text-align: center;}   
+        .ylwWrap > .ylwTable-detail > table tr th {background: rgb(221, 221, 221); font-size: 12px; font-family: ''' + 'Malgun Gothic' + ''';}	   
+        .ylwWrap > .ylwTable-detail > table td {font-size: 12px; font-family: ''' + 'Malgun Gothic' + ''';}   
+        /*사인영역*/   
+        .ylwWrap > .ylwSignArea{font-size:0.832rem; font-family: ''' + 'Malgun Gothic' + '''; color:#313131; letter-spacing:-.8px;}   
+        .ylwWrap > .ylwSignArea > .ylwTxtMessge{font-weight:bold;}   
+</style>  
+<h1 class="ylwTxtTitle">수입결의서_부가세</h1> 
+<div class="ylwWrap"> 
+    <div class="ylwTable-info"> 
+        <table cellpadding="0" cellspacing="0" border="0">  
+			<colgroup>
+				<col width="13%"/>
+				<col width="13%"/>
+				<col width="13%"/>
+				<col width="13%"/>
+				<col width="13%"/>				
+				<col width="13%"/>				
+			</colgroup>			
+            <tr> 
+                <th>결의번호</th> 
+                <td colspan="5">IncomeNo</td>				 
+            </tr>	 
+            <tr> 
+                <th>결의명</th> 
+                <td colspan="5">IncomeName</td>  				 
+            </tr>							 
+			<tr> 
+                <th>사업명</th> 
+                <td colspan="5">BizName</td> 
+            </tr> 
+			<tr> 
+                <th>결의일</th> 
+                <td class="ylwCenter">IncomeDate</td> 
+                <th>부서</th> 
+                <td class="ylwCenter">DeptName</td> 
+                <th>작성자</th> 
+                <td class="ylwCenter">EmpName</td>				 
+            </tr>       
+			<tr> 
+                <th>수입유형</th> 
+                <td class="ylwCenter">SMBillTypeName</td>				 
+                <th>합계(원)</th> 
+                <td colspan="3" class="ylwCenter">TotAmt_KOR</td> 
+            </tr>          
+			<tr> 
+                <th class="ylwNoline"><br><br>비고<br><br><br></th>
+                <td colspan="6" class="ylwNoline">MRemark</td> 
+            </tr> 			 
+        </table> 
+    </div> 
+    <div class="ylwTable-detail"> 
+        <table cellpadding="0" cellspacing="0" border="0"> 
+            <thead> 
+                <tr> 
+                    <th rowspan="3" width="3%">No</th> 
+					<th rowspan="3" width="9.7%">일자</th>  
+                    <th width="52%">예산과목</th> 
+                    <th width="10.666%">금액</th> 
+                    <th width="10.666%">공급가액</th>     
+					<th width="10.666%">부가세</th> 				 
+                </tr>  
+                <tr> 
+                    <th>입금계좌</th> 
+					<th>증빙</th> 
+					<th>거래처</th>  
+                    <th>수입원</th>                     
+                </tr>	
+                <tr> 
+                    <th colspan="4">적요</th>                   
+                </tr>					
+            </thead> 
+            <tbody> 
+                <!-- 반복영역 시작--> 
+                <tr> 
+                    <td rowspan="3" class="ylwCenter">Serl</td> 
+					<td rowspan="3" class="ylwCenter">AccDate</td> 
+                    <td class="ylwCenter">BgtTClassName</td>						 
+                    <td class="ylwNumber">IncomeAmt</td> 
+                    <td class="ylwNumber">CurAmt</td> 
+                    <td class="ylwNumber">CurVAT</td>					 
+                </tr> 
+                <tr> 
+					<td class="ylwCenter">BankAccName</td> 
+					<td class="ylwCenter">EvidName</td> 
+                    <td class="ylwCenter">CustName</td>					 
+                    <td class="ylwCenter">UMSourceName</td>						 
+                </tr> 
+                <tr> 
+					<td colspan="4">Remark</td> 						 
+                </tr>					
+                <!-- 반복영역 끝--> 
+            </tbody>			 
+        </table> 
+    </div> 
+    <div class="ylwTable-info"> 
+        <table cellpadding="0" cellspacing="0" border="0">       
+			<tr> 
+                <th>합계</th> 
+                <td colspan="6" class="ylwNumber">TotAmt</td> 
+            </tr>      			 
+        </table> 
+    </div>		 
+</div>
+</body>
+</html>
