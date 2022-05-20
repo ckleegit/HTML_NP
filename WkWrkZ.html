@@ -1,0 +1,91 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>부재(출장)신청서</title>
+</head>
+<body>
+<style>        
+        * { font-family: 'Malgun Gothic', Dotum,'돋움',Helvetica,"Apple SD Gothic Neo",sans-serif; }
+        h1.ylwTxtTitle {font-weight: bold; font-size: 2rem; text-align: center; text-decoration: underline; margin: 50px 0 30px 0;}
+        div.ylwTxt { padding:40px 0 70px; font-weight:bold; text-align:center; letter-spacing: -.6px; }
+        .ylwWrap {width: 980px; font-family: 'Malgun Gothic'; color: #313131;}
+        .ylwWrap > div > .tableTxtTop { text-align:right;}
+        .ylwWrap > div > table {width: 100%; border-collapse: collapse; border-top: 1px solid #333; border-left: 1px solid #333; border-spacing: 0px;}
+        .ylwWrap > div > table tr th, .ylwWrap > div > table tr td {padding: 4px 5px; min-height:40px; height:40px; box-sizing: border-box; word-break: break-all; letter-spacing: -.6px; border-top: 0px; border-left: 0px; border-right: 1px solid #333; border-bottom: 1px solid #333;}
+        .ylwWrap > div > table tr th {font-weight: bold; background-color: rgb(221, 221, 221);}
+        .ylwWrap > div > table tr td.ylwContent { height:500px; vertical-align:top; }
+        
+        /*인쇄*/
+       @media print {
+            @page {
+                size:21cm 29.7cm;
+                margin:1cm;
+            }
+            html,body {
+                border: 0;
+                margin: 0;
+                padding: 0;
+                font-size: 9pt;
+            }        
+            .ylwWrap {
+                width: 100%;
+                margin:0;
+                border:initial;
+                width:initial;
+                min-height:initial;
+                box-sizing:border-box;
+                box-shadow:initial;
+                background:initial;
+                page-break-after: always;
+            }
+            h1.ylwTxtTitle {
+                margin-top: 0.5cm;
+            }
+        }
+</style>
+<h1 class="ylwTxtTitle">부재(출장)신청서</h1>
+<div class="ylwWrap">
+	<div class="ylwTxt">다음과 같이 부재를 신청하오니 재가 바랍니다.</div>
+	<div class="divData"><p class="tableTxtTop">신청일: <span class="txtSubValue">AppDate</span> </p></div>     	
+    <!-- 다시 마스터-->
+    <div class="ylwTable-info">
+		<table>
+			<colgroup>
+				<col width="15%">
+				<col width="35%">
+				<col width="10%">
+				<col width="15%">
+				<col width="10%">
+				<col width="15%">
+			</colgroup>
+			<tr>
+				<th>부서</th>
+				<td>DeptName</td>
+				<th>사원</th>
+				<td colspan="3">EmpName</td>
+			</tr>
+			<tr>
+				<th>부재종류</th>
+				<td>SMWkItemClassName</td>
+				<th>부재기간</th>
+				<td colspan="3">Date</td>				
+			</tr>
+			<tr>
+				<th>부재항목</th>
+				<td>WkItemName</td>
+				<th>부재일수</th>
+				<td>AppDays</td>
+				<th>부재시간</th>
+				<td>DTCnt</td>				
+			</tr>              
+			<tr>
+				<th colspan="6">부재사유</th>
+			</tr>            
+			<tr>
+				<td colspan="6" class="ylwContent">Reason</td>
+			</tr>
+		</table>
+    </div>
+</div>
+</body>
+</html>
