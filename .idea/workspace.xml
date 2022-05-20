@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bdce307a-05fb-48f8-bde1-807357fe3f88" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="bdce307a-05fb-48f8-bde1-807357fe3f88" name="Changes" comment="git add ." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,7 +26,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/cklee/OneDrive - 영림원소프트랩/바탕 화면/창근/교육/스프링 입문/demo/build.gradle"
+    "last_opened_file_path": "C:/Users/cklee/OneDrive - 영림원소프트랩/새 볼륨 (D)/작업/3. 전자결재(HTML)/수입, 지출, 품의/HTML_NP"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -40,6 +38,29 @@
       <option name="presentableId" value="Default" />
       <updated>1652923496229</updated>
     </task>
+    <task id="LOCAL-00001" summary="git add .">
+      <created>1653014019362</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1653014019362</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="git add ." />
+    <option name="LAST_COMMIT_MESSAGE" value="git add ." />
   </component>
 </project>
